@@ -1,5 +1,6 @@
 import AppLayout from "@/components/layout/AppLayout";
-import { Button } from "@/components/ui/Button";
+// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
