@@ -17,9 +17,27 @@ The architecture is designed to be modular, beginner-friendly, and easy to exten
 # High-Level Architecture
 
 ```text
-                 User
+         ┌──────────────────┐
+         │  UserRepository  │
+         │   (codeatlas)    │
+         └────────┬─────────┘
+                  │
+                  ▼
+         ┌──────────────────┐
+         │    frontend/     │
+         └────────┬─────────┘
+                  │
+                  ▼
+         ┌──────────────────┐
+         │ Next.js App Router│
+         └────────┬─────────┘
                    │
                    ▼
+         ┌──────────────────┐
+         │  UI Components   │
+         └────────┬─────────┘
+                  │
+                  ▼
          ┌──────────────────┐
          │    Next.js UI    │
          └────────┬─────────┘
@@ -61,11 +79,14 @@ Responsible for:
 * Panels
 * Navigation
 
-Technology:
+Technology
 
-* Next.js
-* React
-* Tailwind CSS
+* Next.js 16
+* React 19
+* TypeScript
+* Tailwind CSS v4
+* shadcn/ui
+* next-themes
 
 ---
 

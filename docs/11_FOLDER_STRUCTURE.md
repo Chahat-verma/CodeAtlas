@@ -32,64 +32,26 @@ The folder structure should:
 ```
 codeatlas/
 │
-├── app/
-│   ├── (marketing)/
-│   ├── dashboard/
-│   ├── playground/
-│   ├── examples/
-│   ├── docs/
-│   ├── settings/
-│   ├── api/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   ├── loading.tsx
-│   ├── error.tsx
-│   └── globals.css
-│
-├── components/
-│   ├── layout/
-│   ├── navigation/
-│   ├── ui/
-│   ├── playground/
-│   ├── visualization/
-│   └── shared/
-│
-├── features/
-│   ├── playground/
-│   ├── examples/
-│   ├── documentation/
-│   ├── settings/
-│   └── visualization/
-│
-├── hooks/
-│
-├── lib/
-│
-├── services/
-│
-├── store/
-│
-├── types/
-│
-├── utils/
-│
-├── constants/
-│
-├── public/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-│
-├── styles/
-│
 ├── docs/
 │
-├── tests/
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── config/
+│   ├── hooks/
+│   ├── lib/
+│   ├── providers/
+│   ├── public/
+│   ├── services/
+│   ├── store/
+│   ├── styles/
+│   ├── tests/
+│   ├── types/
+│   ├── utils/
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── next.config.ts
 │
-├── middleware.ts
-├── next.config.ts
-├── package.json
-├── tsconfig.json
 └── README.md
 ```
 

@@ -18,7 +18,14 @@ This document defines the technical implementation requirements for Version 1 of
 
 Framework
 
-* Next.js (App Router)
+* Next.js 16
+* React 19
+* TypeScript
+* Tailwind CSS v4
+* shadcn/ui
+* next-themes
+* Zustand
+* Lucide React
 
 Language
 
@@ -45,18 +52,23 @@ Icons
 # Folder Structure
 
 ```text
-src/
-│
-├── app/
-├── components/
-├── features/
-├── lib/
-├── parser/
-├── engine/
-├── hooks/
-├── types/
-├── utils/
-└── styles/
+codeatlas/
+
+docs/
+
+frontend/
+    app/
+    components/
+    config/
+    hooks/
+    lib/
+    providers/
+    services/
+    store/
+    styles/
+    tests/
+    types/
+    utils/
 ```
 
 ---
