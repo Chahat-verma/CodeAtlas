@@ -1,13 +1,25 @@
+import AppLayout from "@/components/layout/AppLayout";
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import Container from "@/components/ui/Container";
+import Heading from "@/components/ui/typography/Heading";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background text-foreground">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold">CodeAtlas</h1>
+    <AppLayout>
+      <Container>
+        <Card>
+          <Heading>Welcome to CodeAtlas</Heading>
 
-        <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
-          Understand Code Visually.
-        </p>
-      </div>
-    </main>
+          <p className="mt-4 text-gray-500">
+            The interactive C++ visualization workspace will be built here.
+          </p>
+
+          <Button className="mt-6">
+            Get Started
+          </Button>
+        </Card>
+      </Container>
+    </AppLayout>
   );
 }
