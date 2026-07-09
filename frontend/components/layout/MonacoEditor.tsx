@@ -2,6 +2,11 @@
 
 import Editor from "@monaco-editor/react";
 import useEditor from "@/hooks/useEditor";
+import {
+  DEFAULT_LANGUAGE,
+  DEFAULT_THEME,
+  EDITOR_OPTIONS,
+} from "@/config/editor";
 
 export default function CodeEditor() {
   const { code, setCode } = useEditor();
@@ -9,18 +14,11 @@ export default function CodeEditor() {
   return (
     <Editor
       height="500px"
-      language="cpp"
-      theme="vs-dark"
+      language={DEFAULT_LANGUAGE}
+      theme={DEFAULT_THEME}
       value={code}
       onChange={(value) => setCode(value ?? "")}
-      options={{
-        fontSize: 15,
-        minimap: {
-          enabled: false,
-        },
-        automaticLayout: true,
-        scrollBeyondLastLine: false,
-      }}
+      options={EDITOR_OPTIONS}
     />
   );
 }

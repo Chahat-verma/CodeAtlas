@@ -1,6 +1,6 @@
 import AppLayout from "@/components/layout/AppLayout";
 import PageHeader from "@/components/layout/PageHeader";
-import CodeEditor from "@/components/layout/CodeEditor";
+import CodeEditor from "@/components/layout/MonacoEditor";
 import PlaygroundLayout from "@/components/layout/PlaygroundLayout";
 
 export default function PlaygroundPage() {
