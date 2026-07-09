@@ -1,30 +1,33 @@
 import AppLayout from "@/components/layout/AppLayout";
-import SectionHeader from "@/components/layout/SectionHeader";
-import QuickActionCard from "@/components/layout/QuickActionCard";
+import PageHeader from "@/components/layout/PageHeader";
+import DashboardActionCard from "@/components/layout/DashboardActionCard";
 
 export default function HomePage() {
   return (
     <AppLayout>
       <div className="space-y-8">
-        <SectionHeader
+        <PageHeader
           title="Dashboard"
           description="Welcome to CodeAtlas. Choose where you want to begin."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <QuickActionCard
+          <DashboardActionCard
             title="Open Playground"
             description="Start visualizing C++ programs step by step."
+            href="/"
           />
 
-          <QuickActionCard
+          <DashboardActionCard
             title="Browse Examples"
             description="Explore ready-made examples to learn faster."
+            href="/"
           />
 
-          <QuickActionCard
+          <DashboardActionCard
             title="Documentation"
             description="Understand how CodeAtlas works."
+            href="/"
           />
         </div>
       </div>
